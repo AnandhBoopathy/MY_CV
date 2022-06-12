@@ -1,0 +1,371 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="fav.svg">
+    <link rel="stylesheet" href="style.css">
+    <title>My Profile</title>
+    <style>
+      body{
+        color: rgb(51, 50, 50);
+      }
+      .dark{
+        background: black;
+        color:white;
+      }
+      .bgtext {
+          position: relative;
+        
+      }
+
+      .bgtext:after {
+          content: "Coder";
+          position: absolute;
+          font-family: cursive;
+          color: rgba(192, 192, 192,0.1);
+          font-size:100px;
+          top: 0;
+          left: 100;
+          z-index: 0;
+          text-align: center;
+      }
+      .zoom {
+        opacity: 0.8;
+      }
+      .zoom:hover {
+          transform: scale(1.5);
+          opacity: 1;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light pt-2 pb-2">
+        <div class="container-xxl">
+          <!-- navbar brand / title -->
+          <a class="navbar-brand" href="#intro">
+            <span class="fw-bold">
+              <i class="bi bi-file-earmark-person"></i>
+              My Profile - Anandha Raj R
+            </span>
+          </a>
+
+
+          <div class="mode navbar-nav">
+            <i class="test navbar-item bi bi-circle-half"></i>
+          </div>
+
+
+          <!-- toggle button for mobile nav -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <!-- navbar links -->
+          <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#topics">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#reviews">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Get in Touch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">My Projects</a>
+              </li>
+              <li class="nav-item  d-md-inline">
+                <a class="darkmode btn  btn-outline-dark" href="resume.docx" download="My_CV">Download my CV</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+     <section id="intro" class="bgtext">
+        <div class="container-fluid">
+          <div class="row g-4 justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+              <h1>
+                <div class="display-2 " style="text-shadow: 4px 2px rgba(0,0,0,0.3) ">Hello</div>
+                <div class="display-5 " style="text-shadow: 4px 2px rgba(0,0,0,0.3) ">I AM ANAND</div>
+              </h1>
+              <p class="lead my-4 " style="text-shadow: 1px 2px rgba(0,0,0,0.3) ">Front End Developer</p>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+              <!-- tooltip -->
+              <span class="tt" data-bs-placement="bottom" title="Coder">
+                <img src="code.png" class="img-fluid" alt="ebook">
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="topics">
+        <div class="container-md">
+          <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-md-6 text-center d-none d-md-block">
+              <div class="display-2 " style="font-family: cursive;">About Me...</div>
+                <!-- <span class="tt" data-bs-placement="bottom" title="About Me">
+                    <img src="aboutme.png" class="img-fluid" alt="about">
+                </span> -->
+            </div>
+            <div class="col-lg-6">
+              
+              <!-- accordion -->
+              <div class="accordion text-muted" id="chapters">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-1">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                      <i class="bi bi-person-lines-fill"></i>
+                      About
+                    </button>
+                  </h2>
+                  <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>Innovative team player with a passion for continuous learning and having 2.7 years of IT experience in Leading IT Service Company.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="false" aria-controls="chapter-2">
+                      <i class="bi bi-emoji-sunglasses"></i>
+                      Personal
+                    </button>
+                  </h2>
+                  <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-2" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p><b>Name:</b> Anandha Raj R</p>
+                      <p><b>Age:</b> 25</p>
+                      <p><b>Native:</b> Neyveli</p>
+                      <p><b>Work Location:</b> Chennai</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="false" aria-controls="chapter-1">
+                      <i class="bi bi-book-half"></i>
+                      Academics
+                    </button>
+                  </h2>
+                  <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-3" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p><b>SSLC:</b> 93%</p>
+                      <p><b>HSC:</b> 85%</p>
+                      <p><b>UG:</b> Bachelor of Engineering with 73%</p>
+                      <p><b>Aspiration Role:</b> React Front End Developer</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-4">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="false" aria-controls="chapter-4">
+                      <i class="bi bi-trophy"></i>
+                      Achievements
+                    </button>
+                  </h2>
+                  <div id="chapter-4" class="accordion-collapse collapse" aria-labelledby="heading-4" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>Got 3rd Prize in my college Project Expo for my final year project</p>
+                      <p>Initiated and completed Service Improvement Plan (SIP) by Automating Alert monitoring and backup works using shell script</p>
+                      <p>Cleared Direct Capability Assessment in my current Organization and got tagged as Hi-Talent.</p>
+                      <p>Participated in Azure Hackathon and Won Azure Champion Award.</p>
+                      <p>Participated and won Gem rewards in non-technical events in my current Organization</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="heading-5">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-5" aria-expanded="false" aria-controls="chapter-5">
+                      <i class="bi bi-laptop"></i>
+                      Certifications
+                    </button>
+                  </h2>
+                  <div id="chapter-5" class="accordion-collapse collapse" aria-labelledby="heading-5" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <p>AZ-900 Azure Fundamentals.</p>
+                      <p>AZ-104 Azure Administrator.</p>
+                      <p>Hacker Rank Python (Basic) and Python Problem Solving (Basic) Certified.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- SKILLS  -->
+      <section id="reviews">
+        <div class="container">
+          <div class="text-center" style="font-family:cursive; text-shadow: 2px 2px grey;">
+            <h3>Skills</h3>
+          </div>
+          <div class="row my-5 text-center">
+            <div class="col-3  zoom">
+              <span class="tt" data-bs-placement="bottom" title="JavaScript">
+                <img src="js.png" class="img-thumbnail" style="max-width: 50%;" alt="ebook">
+              </span>
+            </div>
+            <div class="col-3 zoom">
+              <span class="tt" data-bs-placement="bottom" title="React JS">
+                <img src="react.png" class="img-thumbnail" style="max-width: 50%;" alt="ebook">
+              </span>
+            </div>
+            <div class="col-3 zoom">
+              <span class="tt" data-bs-placement="bottom" title="HTML">
+                <img src="html.png" class="img-thumbnail" style="max-width: 50%;" alt="ebook">
+              </span>
+            </div>
+            <div class="col-3 zoom">
+              <span class="tt" data-bs-placement="bottom" title="CSS">
+                <img src="css.png" class="img-thumbnail" style="max-width: 50%;" alt="ebook">
+              </span>
+            </div>
+          </div>
+          <div class="row my-5 text-center">
+            <div class="col-4  zoom">
+              <span class="tt" data-bs-placement="bottom" title="bootstrap 5">
+                <img src="boot.png" class="img-thumbnail" style="max-width: 40%;" alt="ebook">
+              </span>
+            </div>
+            <div class="col-4 zoom">
+              <span class="tt" data-bs-placement="bottom" title="Azure Administrator">
+                <img src="azure.png" class="img-thumbnail" style="max-width: 37%;" alt="ebook">
+              </span>
+            </div>
+            <div class="col-4 zoom">
+              <span class="tt" data-bs-placement="bottom" title="Python Basics">
+                <img src="python.png" class="img-thumbnail" style="max-width: 35%;" alt="ebook">
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>  
+<!--Contact-->
+      <section id="contact">
+        <div class="container">
+          <div class="text-center" style="font-family: cursive; text-shadow: 2px 2px grey;">
+            <h3>Contact me</h3>
+          </div>
+          <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+              
+              <form >
+                <label for="email" class="form-label">Email address:</label>
+                <div class="input-group mb-4">
+                  <span class="input-group-text">
+                    <i class="bi bi-envelope-fill "></i>
+                  </span>
+                  <input type="text" id="email" class="form-control email" placeholder="e.g. anand@example.com" />
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
+                </div>
+                <label for="name" class="form-label">Name:</label>
+                <div class="mb-4 input-group">
+                  <span class="input-group-text">
+                    <i class="bi bi-person-fill "></i>
+                  </span>
+                  <input type="text" id="name" class="form-control name" placeholder="e.g. Anand" />
+                  <!-- tooltip -->
+                  <span class="input-group-text">
+                    <span class="tt" data-bs-placement="bottom" title="Your Name Please">
+                      <i class="bi bi-question-circle text-muted"></i>
+                    </span>
+                  </span>
+                </div>
+                <div class="mb-4 mt-5 form-floating text-muted">
+                  <textarea class="form-control message" id="message" style="height: 140px" placeholder="query"></textarea>
+                  <label for="query">Your Message...</label>
+                </div>
+                <div class="mb-4 text-center ">
+                  <input type="submit" class="darkmode btn btn-outline-dark" />
+                </div>
+                <div class="updatemsg text-center"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--My Projects-->
+
+      <section id="projects">
+        <div class="container">
+          <div class="text-center" style="font-family: cursive">
+            <h2 class="mb-3" style="text-shadow: 2px 2px grey">My Projects</h2>
+            <p>I have done projects with HTML, CSS, JavaScript, Bootstrap 5 and React JS. Please click the below button to see my projects.</p>
+          </div>
+          <div class="text-center mb-4 justify-content-center">
+            <a href="#sidebar" class="darkmode btn btn-lg btn-outline-dark d-block mt-3 justify-content-center" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">Explore my projects</a>
+          </div>
+        </div>
+      </section>
+
+<!--SIDEBAR-->
+
+      <div class="offcanvas text-muted offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="sidebar-label">My Projects</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Please Select the project to view from the below dropdown</p>
+          <!-- dropdown -->
+          <div class="dropdown mt-3">
+            <button class="btn btn-outline-dark dropdown-toggle" type="button" id="book-dropdown" data-bs-toggle="dropdown">
+              Choose a Project
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="book-dropdown">
+              <li><a class="dropdown-item" href="https://anandhboopathy.github.io/learn-todo/todo.html" target="_blank">My Todo Project</a></li>
+              <li><a class="dropdown-item" href=" https://anandhboopathy.github.io/LearnJS-Charoom/" target="_blank">Chat App</a></li>
+              <li><a class="dropdown-item" href="https://anandhboopathy.github.io/Learn-WeatherProject/" target="_blank">My Weather App</a></li>
+            </ul>
+          </div>
+          <p>Other than the above projects this page is also my project created with HTML, CSS, Bootstrap and Firebase</p>
+        </div>
+      </div>
+
+      <!--FINAL TOUCH-->
+      <section >
+        <div class="container">
+          <div class="text-center">
+            <h2>Thanks for Viewing my profile</h2>
+            <p class="lead">Happy to work with you soon!</p>
+          </div>
+        </div> 
+      </section> 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+  <script>
+      var config = {
+        apiKey: "AIzaSyBWYI8sUj3w-l22CGe21VpCwLDBiVifufU",
+        projectId: "my-new-project-ef9d5",
+        storageBucket: "my-new-project-ef9d5.appspot.com",
+        messagingSenderId: "1041991742776",
+        appId: "1:1041991742776:web:6537578daefa8cb9c47dcd",
+        measurementId: "G-LTY6Y1MSFC",
+        authDomain: "my-new-project-ef9d5.firebaseapp.com"
+      };
+      firebase.initializeApp(config);
+      const db = firebase.firestore();
+  </script>
+  <script src="sandbox.js"></script>
+</body>
+</html>
