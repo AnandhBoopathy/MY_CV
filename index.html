@@ -54,7 +54,9 @@
 
 
           <div class="mode navbar-nav">
+            <span class="tt" data-bs-placement="bottom" title="Change background">
             <i class="test navbar-item bi bi-circle-half"></i>
+            </span>
           </div>
 
 
@@ -267,7 +269,7 @@
                   <span class="input-group-text">
                     <i class="bi bi-envelope-fill "></i>
                   </span>
-                  <input type="text" id="email" class="form-control email" placeholder="e.g. anand@example.com" />
+                  <input type="text" id="email" class="form-control email" placeholder="e.g. anand@example.com" required/>
                   <!-- tooltip -->
                   <span class="input-group-text">
                     <span class="tt" data-bs-placement="bottom" title="Enter an email address we can reply to.">
@@ -280,7 +282,7 @@
                   <span class="input-group-text">
                     <i class="bi bi-person-fill "></i>
                   </span>
-                  <input type="text" id="name" class="form-control name" placeholder="e.g. Anand" />
+                  <input type="text" id="name" class="form-control name" placeholder="e.g. Anand" required />
                   <!-- tooltip -->
                   <span class="input-group-text">
                     <span class="tt" data-bs-placement="bottom" title="Your Name Please">
@@ -289,7 +291,7 @@
                   </span>
                 </div>
                 <div class="mb-4 mt-5 form-floating text-muted">
-                  <textarea class="form-control message" id="message" style="height: 140px" placeholder="query"></textarea>
+                  <textarea class="form-control message" id="message" style="height: 140px" placeholder="query" required ></textarea>
                   <label for="query">Your Message...</label>
                 </div>
                 <div class="mb-4 text-center ">
